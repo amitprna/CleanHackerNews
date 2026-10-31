@@ -1,0 +1,8 @@
+# Optional short address: a free Netlify site that serves every path from your CloudFront site.
+# Replace the domain below with your SiteUrl from `npm run deploy`, then drag this folder onto
+# https://app.netlify.com/drop.
+[[redirects]]
+  from = "/*"
+  to = "https://YOUR-DISTRIBUTION.cloudfront.net/:splat"
+  status = 200
+  force = true
